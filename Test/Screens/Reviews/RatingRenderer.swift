@@ -36,8 +36,8 @@ extension RatingRendererConfig {
 final class RatingRenderer {
 
     private let config: RatingRendererConfig
-    private var images: [Int: UIImage]
     private let imageRenderer: UIGraphicsImageRenderer
+    private let cache = NSCache<NSNumber, UIImage>()
 
     init(
         config: RatingRendererConfig,
@@ -45,7 +45,6 @@ final class RatingRenderer {
         imageRenderer: UIGraphicsImageRenderer
     ) {
         self.config = config
-        self.images = images
         self.imageRenderer = imageRenderer
     }
 
@@ -64,7 +63,12 @@ extension RatingRenderer {
     }
 
     func ratingImage(_ rating: Int) -> UIImage {
-        images[rating] ?? drawRatingImageAndCache(rating)
+        if let cached = cache.object(forKey: NSNumber(value: rating)) {
+            return cached
+        }
+        let newImage = drawRatingImage(rating)
+        cache.setObject(newImage, forKey: NSNumber(value: rating))
+        return newImage
     }
 
 }
@@ -75,7 +79,6 @@ private extension RatingRenderer {
 
     func drawRatingImageAndCache(_ rating: Int) -> UIImage {
         let ratingImage = drawRatingImage(rating)
-        images[rating] = ratingImage
         return ratingImage
     }
 

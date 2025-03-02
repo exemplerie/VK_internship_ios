@@ -6,7 +6,12 @@
             "last_name": "Петров",
             "rating": 5,
             "text": "Кроссовки хорошие. Удобные. Как по мне сшиты.",
-            "created": "1 час назад"
+            "created": "1 час назад",
+            "avatar_url": "https://img.freepik.com/free-photo/morskie-oko-tatry_1204-510.jpg?t=st=1740759002~exp=1740762602~hmac=32431cc3b2916a5c6e597da2b5d508a2ec8a13cd47339ee2260c867f6ccf8c09&w=2000",
+            "photo_urls": [
+                "https://img.freepik.com/free-photo/morskie-oko-tatry_1204-510.jpg?t=st=1740759002~exp=1740762602~hmac=32431cc3b2916a5c6e597da2b5d508a2ec8a13cd47339ee2260c867f6ccf8c09&w=2000",
+                "https://img.freepik.com/free-photo/vertical-picture-river-forest-with-rocks-cloudy-sky_181624-12497.jpg?t=st=1740761012~exp=1740764612~hmac=2d91499226c1bf2a1e8768a632d53d45fd82c10eb7c2667f4a8bbdfab08452e8&w=996"
+            ]
         },
         {
             "first_name": "Екатерина",
@@ -14,6 +19,64 @@
             "rating": 3,
             "text": "Скользские ужасно.",
             "created": "12 минут назад"
+        },
+        {
+            "first_name": "Евгения",
+            "last_name": "Петрова",
+            "rating": 4,
+            "text": "Прошла по снегу 30 метров, 5 раз упала. Спасибо мужу, поддерживал. Возврат, к сожалению.",
+            "created": "35 минут назад"
+        },
+        {
+            "first_name": "Илья",
+            "last_name": "Петров",
+            "rating": 2,
+            "text": "Понравилось отношение - несмотря на то, что заказ был выполнен не идеально, продавец был очень любезен и шёл... Прошла по снегу 30 метров, 5 раз упала. Спасибо мужу, поддерживал. Возврат, к сожалению.",
+            "created": "минуту назад"
+        },
+        {
+            "first_name": "Никита",
+            "last_name": "Иванов",
+            "rating": 5,
+            "text": "Отлично выглядят, хоть и скользковатые...",
+            "created": "только что"
+        },
+        {
+            "first_name": "Олег",
+            "last_name": "Николаев",
+            "rating": 1,
+            "text": "Ребёнок жалуется, что очень скользские. Пока шла до школы...",
+            "created": "15 минут назад"
+        },
+        {
+            "first_name": "Николай",
+            "last_name": "Петров",
+            "rating": 2,
+            "text": "",
+            "created": "вчера в 12:39"
+        },
+
+
+        {
+            "first_name": "Иван",
+            "last_name": "Петров",
+            "rating": 5,
+            "text": "Кроссовки хорошие. Удобные. Как по мне сшиты.",
+            "created": "1 час назад"
+        },
+        {
+            "first_name": "Екатерина",
+            "last_name": "Иванова",
+            "rating": 3,
+            "text": "Скользские ужасно.",
+            "created": "12 минут назад",
+            "avatar_url": "https://img.freepik.com/free-photo/idyllic-shot-huge-mountain-covered-vegetation-with-body-water-its-base_181624-21444.jpg?t=st=1740837062~exp=1740840662~hmac=ef6193e8bf6a126f600052488df2d58884e7fe4dad624e264b74a040d1e58289&w=2000",
+            "photo_urls": [
+                "https://img.freepik.com/free-photo/beautiful-cherry-blossoms-trees-blooming-spring_335224-878.jpg?t=st=1740837044~exp=1740840644~hmac=d8d8f7b59ef346a41743934278ebc0e30cc4c8cb673dc48773d7b78ccefb82f1&w=2000",
+                "https://img.freepik.com/free-photo/beautiful-scenery-green-valley-near-alp-mountains-austria-cloudy-sky_181624-6979.jpg?t=st=1740837007~exp=1740840607~hmac=b8d22da855dc3f74ec590d18fa9bf1565eb73c3e12b08fc1e2f5c8ac8a664085&w=2000",
+                "https://img.freepik.com/free-photo/vertical-picture-river-forest-with-rocks-cloudy-sky_181624-12497.jpg?t=st=1740761012~exp=1740764612~hmac=2d91499226c1bf2a1e8768a632d53d45fd82c10eb7c2667f4a8bbdfab08452e8&w=996",
+                "https://img.freepik.com/free-photo/nature-landscape-with-lake-mountain_395237-240.jpg?t=st=1740836971~exp=1740840571~hmac=b3445ecb9f9b5eef5e99cd8cd4f3019bc2d9889a58b4aeb4cad64c4c38a635c8&w=2000"
+            ]
         },
         {
             "first_name": "Евгения",
@@ -78,58 +141,11 @@
             "last_name": "Петров",
             "rating": 2,
             "text": "Понравилось отношение - несмотря на то, что заказ был выполнен не идеально, продавец был очень любезен и шёл... Прошла по снегу 30 метров, 5 раз упала. Спасибо мужу, поддерживал. Возврат, к сожалению.",
-            "created": "минуту назад"
-        },
-        {
-            "first_name": "Никита",
-            "last_name": "Иванов",
-            "rating": 5,
-            "text": "Отлично выглядят, хоть и скользковатые...",
-            "created": "только что"
-        },
-        {
-            "first_name": "Олег",
-            "last_name": "Николаев",
-            "rating": 1,
-            "text": "Ребёнок жалуется, что очень скользские. Пока шла до школы...",
-            "created": "15 минут назад"
-        },
-        {
-            "first_name": "Николай",
-            "last_name": "Петров",
-            "rating": 2,
-            "text": "",
-            "created": "вчера в 12:39"
-        },
-
-
-        {
-            "first_name": "Иван",
-            "last_name": "Петров",
-            "rating": 5,
-            "text": "Кроссовки хорошие. Удобные. Как по мне сшиты.",
-            "created": "1 час назад"
-        },
-        {
-            "first_name": "Екатерина",
-            "last_name": "Иванова",
-            "rating": 3,
-            "text": "Скользские ужасно.",
-            "created": "12 минут назад"
-        },
-        {
-            "first_name": "Евгения",
-            "last_name": "Петрова",
-            "rating": 4,
-            "text": "Прошла по снегу 30 метров, 5 раз упала. Спасибо мужу, поддерживал. Возврат, к сожалению.",
-            "created": "35 минут назад"
-        },
-        {
-            "first_name": "Илья",
-            "last_name": "Петров",
-            "rating": 2,
-            "text": "Понравилось отношение - несмотря на то, что заказ был выполнен не идеально, продавец был очень любезен и шёл... Прошла по снегу 30 метров, 5 раз упала. Спасибо мужу, поддерживал. Возврат, к сожалению.",
-            "created": "минуту назад"
+            "created": "минуту назад",
+            "avatar_url": "https://img.freepik.com/free-photo/nature-landscape-with-lake-mountain_395237-240.jpg?t=st=1740836971~exp=1740840571~hmac=b3445ecb9f9b5eef5e99cd8cd4f3019bc2d9889a58b4aeb4cad64c4c38a635c8&w=2000",
+            "photo_urls": [
+                "https://img.freepik.com/free-photo/close-up-submerged-stones-lake_1160-543.jpg?t=st=1740836859~exp=1740840459~hmac=4dd110f6ca3c7f154c885ee4e68dbc828cadaef4fa136863d8090bfc0898dc15&w=996"
+            ]
         },
         {
             "first_name": "Никита",

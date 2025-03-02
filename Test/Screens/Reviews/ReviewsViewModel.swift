@@ -25,6 +25,16 @@ final class ReviewsViewModel: NSObject {
 
 }
 
+extension ReviewsViewModel {
+    func refreshReviews(completion: @escaping () -> Void) {
+        state.items.removeAll()
+        state.offset = 0
+        state.shouldLoad = true
+        getReviews()
+        completion()
+    }
+}
+
 // MARK: - Internal
 
 extension ReviewsViewModel {
@@ -34,6 +44,10 @@ extension ReviewsViewModel {
     /// Метод получения отзывов.
     func getReviews() {
         guard state.shouldLoad else { return }
+        if state.offset == 0 {
+            state.isLoading = true
+            onStateChange?(state)
+        }
         state.shouldLoad = false
         reviewsProvider.getReviews(offset: state.offset, completion: gotReviews)
     }
@@ -52,9 +66,12 @@ private extension ReviewsViewModel {
             state.items += reviews.items.map(makeReviewItem)
             state.offset += state.limit
             state.shouldLoad = state.offset < reviews.count
+            state.items = state.items.filter { !($0 is ReviewCountCellConfig) }
+            state.items.append(ReviewCountCellConfig(count: reviews.count))
         } catch {
             state.shouldLoad = true
         }
+        state.isLoading = false
         onStateChange?(state)
     }
 
@@ -81,10 +98,18 @@ private extension ReviewsViewModel {
     func makeReviewItem(_ review: Review) -> ReviewItem {
         let reviewText = review.text.attributed(font: .text)
         let created = review.created.attributed(font: .created, color: .created)
+        let userName = "\(review.first_name) \(review.last_name)".attributed(font: .text)
+        let ratingImage = ratingRenderer.ratingImage(review.rating)
         let item = ReviewItem(
             reviewText: reviewText,
             created: created,
-            onTapShowMore: showMoreReview
+            onTapShowMore: { [weak self] id in
+                self?.showMoreReview(with: id)
+            },
+            userName: userName,
+            ratingImage: ratingImage,
+            avatarURL: review.avatar_url,
+            photoURLs: review.photo_urls
         )
         return item
     }
